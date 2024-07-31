@@ -7,20 +7,23 @@ import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
 import ShopCategory from './Pages/ShopCategory';
+import mensBanner from './Components/Assets/banner_mens.png'
+import womensBanner from './Components/Assets/banner_women.png'
+import kidsBanner from './Components/Assets/banner_kids.png'
 
 function App() {
   return (
     <div style={{ position: 'relative' }}>
       <BrowserRouter>
         <Navbar />
-        <div style={{ marginTop: '70px' }} />
+        <div style={{ marginTop: '71px' }} />
         <Routes>
           <Route path='/' element={<Shop />} />
           <Route path='/shop' element={<Shop />} />
-          <Route path='/mens' element={<ShopCategory category='men' />} />
-          <Route path='/womens' element={<ShopCategory category='women' />} />
-          <Route path='/kids' element={<ShopCategory category='kid' />} />
-          <Route path='/product' element={<ShopCategory category='product' />}>
+          <Route path='/mens' element={<ShopCategory banner={mensBanner} category='men' />} />
+          <Route path='/womens' element={<ShopCategory banner={womensBanner} category='women' />} />
+          <Route path='/kids' element={<ShopCategory banner={kidsBanner} category='kid' />} />
+          <Route path='/product' element={<Product />}>
             <Route path=":productId" element={<Product />} />
           </Route>
           <Route path='/login' element={<LoginSignup />} />
