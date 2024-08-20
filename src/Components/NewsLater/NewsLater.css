@@ -60,3 +60,119 @@
 .newslater button:active {
     background-color: black;
 }
+
+@media(max-width: 1280px) {
+    .newslater {
+        padding: 0px 100px;
+        margin-bottom: 120px;
+    }
+    .newslater h1 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+    .newslater p {
+        font-size: 17px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .newslater div {
+        width: 500px;
+        height: 45px;
+    }
+    .newslater input {
+        width: 350px;
+        margin-left: 25px;
+        font-size: 14px;
+    }
+    .newslater button {
+        width: 150px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .newslater {
+        padding: 0px 80px;
+        margin-bottom: 100px;
+    }
+    .newslater h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .newslater p {
+        font-size: 17px;
+        margin-top: 10px;
+        margin-bottom: 16px;
+    }
+    .newslater div {
+        width: 450px;
+        height: 45px;
+    }
+    .newslater input {
+        width: 320px;
+        margin-left: 20px;
+        font-size: 13px;
+    }
+    .newslater button {
+        width: 130px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 800px) {
+    .newslater {
+        padding: 0px 60px;
+        margin-bottom: 80px;
+    }
+    .newslater h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .newslater p {
+        font-size: 13px;
+        margin-top: 8px;
+        margin-bottom: 14px;
+    }
+    .newslater div {
+        width: 350px;
+        height: 45px;
+    }
+    .newslater input {
+        width: 250px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .newslater button {
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 500px) {
+    .newslater {
+        padding: 0px 40px;
+        margin-bottom: 60px;
+    }
+    .newslater h1 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .newslater p {
+        font-size: 9px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+    .newslater div {
+        width: 240px;
+        height: 30px;
+    }
+    .newslater input {
+        width: 160px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .newslater button {
+        width: 80px;
+        font-size: 10px;
+    }
+}

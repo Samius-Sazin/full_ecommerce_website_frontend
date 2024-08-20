@@ -29,7 +29,8 @@
     list-style: none;
     gap: 50px;
     color: rgb(11, 68, 255);
-    font-size: 18px;
+    font-size: 16px;
+    padding: 0px;
 }
 
 .footer-links li {
@@ -64,4 +65,54 @@
     border: none;
     border-radius: 16px;
     background: #c7c7c7;
+}
+
+@media(max-width: 800px) {
+    .footer {
+        gap: 30px;
+    }
+
+    .footer-logo {
+        gap: 10px;
+    }
+
+    .footer-logo img {
+        width: 38px;
+    }
+
+    .footer-logo p {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .footer-links {
+        gap: 10px;
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .footer-social-icons {
+        gap: 15px;
+    }
+
+    .footer-icons-container {
+        padding: 5px;
+        background: #fbfbfb;
+        border: 1px solid #ebebeb;
+    }
+
+    .footer-icons-container img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer-copyright {
+        gap: 20px;
+        width: 100%;
+        font-size: 11px;
+    }
+    
+    .footer-copyright hr {
+        height: 1px;
+        width: 50%;
+    }
 }

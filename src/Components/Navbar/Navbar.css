@@ -100,3 +100,113 @@
     margin-top: -28px;
     margin-left: -52px;
 }
+
+.nav-dropdown {
+    display: none;
+}
+
+@media(max-width: 1280px) {
+    .navbar {
+        padding: 8px 20px;
+    }
+    .nav-logo img {
+        width: 40px;
+    }
+    .nav-logo p {
+        font-size: 20px;
+    }
+    .nav-menu {
+        gap: 40px;
+        font-size: 14px;
+    }
+    .nav-login-cart {
+        gap: 30px;
+    }
+    .nav-login-cart button {
+        padding: 2px 30px;
+        font-size: 15px;
+    }
+    .nav-cart-count {
+        margin-left: -40px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .navbar {
+        padding: 8px 30px;
+    }
+    .nav-menu {
+        gap: 25px;
+        font-size: 14px;
+    }
+    .nav-login-cart {
+        gap: 20px;
+    }
+    .nav-login-cart button {
+        padding: 2px 20px;
+        font-size: 14px;
+    }
+    .nav-login-cart img {
+        width: 30px;
+    }
+    .nav-cart-count {
+        margin-left: -30px;
+    }
+}
+
+@media(max-width: 800px) {
+    .navbar {
+        padding: 8px 0px;
+    }
+    .nav-dropdown {
+        display: block;
+        width: 20px;
+        rotate: -90deg;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .nav-menu {
+        display: none;
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        justify-content: center;
+        top: 50px;
+    }
+    .nav-menu-visible {
+        display: flex;
+    }
+    .nav-dropdown.open {
+        transform: rotate(90deg);
+    }
+}
+@media(max-width: 500px){
+    .navbar {
+        padding: 10px 0px;
+        gap: 0px;
+    }
+    .nav-logo img {
+        width: 30px;
+    }
+    .nav-logo p {
+        font-size: 18px;
+    }
+    .nav-menu {
+        height: 50px;
+        top: 50px;
+    }
+    .nav-login-cart {
+        gap: 20px;
+    }
+    .nav-login-cart button {
+        padding: 1.5px 18px;
+        font-size: 13px;
+    }
+    .nav-login-cart img {
+        width: 25px;
+    }
+    .nav-cart-count {
+        margin-left: -30px;
+    }
+}

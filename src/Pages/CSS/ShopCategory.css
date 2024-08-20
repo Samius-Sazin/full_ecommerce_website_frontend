@@ -12,10 +12,8 @@
 }
 
 .shop-category-index-sort {
-    margin-top: 30px;
-    width: 90%;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-top: 50px;
+    width: 84%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,10 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 150px auto;
     width: 233px;
     height: 50px;
     border-radius: 75px;
@@ -55,4 +50,93 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media(max-width: 1280px) {
+    .shop-category-sort {
+        padding: 2px 12px;
+        font-size: 12px;
+    }
+
+    .shop-category-index-sort {
+        font-size: 12px;
+    }
+
+    .shop-category-products {
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .shop-category-load-more {
+        margin: 100px auto;
+        width: 170px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 800px) {
+    .shop-category-index-sort {
+        margin-bottom: 10px;
+        font-size: 10px;
+        width: 94%;
+    }
+
+    .shop-category-sort {
+        padding: 1px 10px;
+        font-size: 10px;
+    }
+
+    .shop-category-sort img {
+        width: 10px;
+    }
+
+    .shop-category-products {
+        margin: 10px 3%;
+    }
+
+    .shop-category-load-more {
+        margin: 70px auto;
+        width: 140px;
+        height: 34px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .shop-category-index-sort {
+        font-size: 8px;
+        width: 88%;
+    }
+
+    .shop-category-sort {
+        padding: 1px 7px;
+        font-size: 7px;
+    }
+
+    .shop-category-sort img {
+        width: 7px;
+    }
+
+    .shop-category-products {
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 3%;
+    }
+
+    .shop-category-products .item {
+        width: 100%;
+    }
+
+    .shop-category-products .item img {
+        width: 100%;
+    }
+
+    .shop-category-load-more {
+        margin: 40px auto;
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
 }

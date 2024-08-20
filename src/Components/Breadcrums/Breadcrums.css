@@ -8,3 +8,70 @@
     margin: 100px 130px 30px;
     text-transform: capitalize;
 }
+
+@media(max-width: 1280px) {
+    .breadcrum {
+        gap: 6px;
+        font-size: 14px;
+        margin: 80px 100px 20px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .breadcrum {
+        gap: 8px;
+        font-size: 13px;
+        margin: 70px 20px 15px;
+    }
+
+    .breadcrum img {
+        width: 8px;
+    }
+}
+
+@media(max-width: 800px) {
+    .breadcrum {
+        font-size: 10px;
+        margin: 70px 0px 0px 10px;
+        width: 90%;
+        height: 40px;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .breadcrum:hover {
+        white-space: wrap;
+        overflow: visible;
+    }
+
+    .breadcrum img {
+        width: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+@media(max-width: 500px) {
+    .breadcrum {
+        gap: 3px;
+        font-size: 9px;
+        margin: 70px 0px 0px 25px;
+        width: 83%;
+        height: 35px;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .breadcrum img {
+        width: 4px;
+    }
+
+    .breadcrum:hover {
+        white-space: wrap;
+        overflow: visible;
+    }
+}

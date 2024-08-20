@@ -1,3 +1,25 @@
+.navbar-margin {
+  margin-top: 71px;
+}
+
+@media(max-width: 1280px) {
+  .navbar-margin {
+    margin-top: 59px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .navbar-margin {
+    margin-top: 57px;
+  }
+}
+
+@media(max-width: 500px) {
+  .navbar-margin {
+    margin-top: 53px;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +54,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

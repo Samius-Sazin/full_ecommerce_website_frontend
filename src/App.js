@@ -16,14 +16,14 @@ function App() {
     <div style={{ position: 'relative' }}>
       <BrowserRouter>
         <Navbar />
-        <div style={{ marginTop: '71px' }} />
+        <div className='navbar-margin' />
         <Routes>
           <Route path='/' element={<Shop />} />
           <Route path='/shop' element={<Shop />} />
           <Route path='/mens' element={<ShopCategory banner={mensBanner} category='men' />} />
           <Route path='/womens' element={<ShopCategory banner={womensBanner} category='women' />} />
           <Route path='/kids' element={<ShopCategory banner={kidsBanner} category='kid' />} />
-          <Route path='/product' element={<Product />}>
+          <Route path='/product' element={<Product/>}>
             <Route path=":productId" element={<Product />} />
           </Route>
           <Route path='/login' element={<LoginSignup />} />
